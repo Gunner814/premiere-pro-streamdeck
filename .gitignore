@@ -1,0 +1,12 @@
+﻿# Node.js
+node_modules/
+
+# Plugin build output
+*.sdPlugin/bin
+*.sdPlugin/logs
+
+# Generated profile output
+dist/
+
+# Personal backups
+backups/

@@ -1,0 +1,50 @@
+{
+	"Name": "Premiere Pro",
+	"Version": "0.1.0.0",
+	"Author": "Gunner814",
+	"Actions": [
+		{
+			"Name": "Timeline Dial",
+			"UUID": "com.gunner814.premiere-pro.timeline-dial",
+			"Icon": "imgs/actions/timeline-dial/icon",
+			"Tooltip": "Turn to scrub, step between edits, zoom the timeline, shuttle or undo/redo in Adobe Premiere Pro. Pick the mode in the property inspector.",
+			"PropertyInspectorPath": "ui/timeline-dial.html",
+			"Controllers": ["Encoder"],
+			"Encoder": {
+				"Icon": "imgs/actions/timeline-dial/encoder-icon",
+				"layout": "layouts/dial.json",
+				"TriggerDescription": {
+					"Rotate": "Scrub / zoom / step (per mode)",
+					"Push": "Mode action (e.g. Add Edit)",
+					"Touch": "Play / Pause"
+				}
+			},
+			"States": [
+				{
+					"Image": "imgs/actions/timeline-dial/key",
+					"TitleAlignment": "middle"
+				}
+			]
+		}
+	],
+	"Category": "Premiere Pro",
+	"CategoryIcon": "imgs/plugin/category-icon",
+	"CodePath": "bin/plugin.js",
+	"Description": "Dial control for Adobe Premiere Pro: frame scrub, edit-to-edit, timeline zoom, JKL shuttle and undo/redo. Keystrokes are only sent while Premiere Pro is the foreground app.",
+	"Icon": "imgs/plugin/marketplace",
+	"SDKVersion": 3,
+	"Software": {
+		"MinimumVersion": "7.1"
+	},
+	"OS": [
+		{
+			"Platform": "windows",
+			"MinimumVersion": "10"
+		}
+	],
+	"Nodejs": {
+		"Version": "24",
+		"Debug": "enabled"
+	},
+	"UUID": "com.gunner814.premiere-pro"
+}

@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schemas.elgato.com/streamdeck/plugins/layout.json",
+	"id": "com.gunner814.premiere-pro.dial",
+	"items": [
+		{
+			"key": "title",
+			"type": "text",
+			"rect": [0, 14, 200, 30],
+			"font": { "size": 22, "weight": 700 },
+			"alignment": "center"
+		},
+		{
+			"key": "value",
+			"type": "text",
+			"rect": [0, 54, 200, 30],
+			"font": { "size": 18 },
+			"color": "#c8c8c8",
+			"alignment": "center"
+		}
+	]
+}

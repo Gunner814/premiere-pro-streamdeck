@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <title>Timeline Dial Settings</title>
+    <meta charset="utf-8" />
+    <script src="https://sdpi-components.dev/releases/v4/sdpi-components.js"></script>
+</head>
+
+<body>
+    <sdpi-item label="Mode">
+        <sdpi-select setting="mode" default="frame">
+            <option value="frame">Frame scrub (&larr; / &rarr;)</option>
+            <option value="frame5">5-frame scrub (Shift + &larr; / &rarr;)</option>
+            <option value="edit">Edit-to-edit (&uarr; / &darr;)</option>
+            <option value="zoom">Timeline zoom (- / =)</option>
+            <option value="shuttle">JKL shuttle (J / L)</option>
+            <option value="undo">Undo / Redo</option>
+        </sdpi-select>
+    </sdpi-item>
+    <sdpi-item label="Press">
+        <span>Frame / Fast Scrub: cut at playhead (Ctrl+K)<br>Edits: cut all tracks (Ctrl+Shift+K)<br>Zoom: fit sequence (\)<br>Shuttle: stop (K)<br>Undo: save (Ctrl+S)</span>
+    </sdpi-item>
+    <sdpi-item label="Touch">
+        <span>Tap the touch strip to Play / Pause.</span>
+    </sdpi-item>
+</body>
+
+</html>
